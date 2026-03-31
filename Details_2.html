@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMAR_PORTFOLIEO</title>
+        <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+<style>
+    /* About section layout */
+.about {
+    display: flex;
+    align-items: center; 
+    justify-content: center; /* Center alignment for the whole block */
+    gap: 20px; /* Space kam karne ke liye (line aur picture ke darmiyan gap) */
+    text-align: left;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Container width */
+    margin: 0 auto;
+}
+
+/* Picture holder - Size bada karne ke liye */
+.about-img-holder {
+    flex: 1;
+    min-width: 400px; /* Pehle se bada size */
+    text-align: right; /* Picture ko line ki taraf push karne ke liye */
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px; /* Picture ka width barha diya gaya hai */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Details area */
+.about-caption {
+    flex: 1.2;
+    min-width: 300px;
+    padding-left: 20px; /* Line se thora sa distance */
+}
+
+/* Vertical Line styling (agar aap border use kar rahe hain) */
+@media (min-width: 992px) {
+    .about-img-holder {
+        border-right: 2px solid #6f42c1; /* Theme ke mutabiq purple line */
+        padding-right: 20px; /* Line aur picture ke darmiyan space kam kiya */
+    }
+}
+@media (min-width: 992px) {
+    .about-img-holder-right {
+        border-left: 2px solid #6f42c1; /* Theme ke mutabiq purple line */
+        padding-left: 20px; /* Line aur picture ke darmiyan space kam kiya */
+    }
+}
+</style>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+        <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">UMAR</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="index.html">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="index.html#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="index.html#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="index.html#testmonial">Testmonial</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Project</span>
+                <span class="down">Pizza Ordering Management System</span>
+            </h1>
+            <p class="header-subtitle">ASP.NET</p>
+
+                        <a href="https://github.com/UmarAnjum512/Pizza_App.git" class="btn btn-primary"><i class="ti-github">  </i> GitHub Link</a>
+
+            
+        </div>
+    </header><!-- end of page header -->
+    
+        <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/Pizza.PNG" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-img-holder-right">
+                    <img src="assets/imgs/pizzaDashboard.PNG" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+            <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-caption">
+                    <p class="section-subtitle">Manager</p>
+                    <h2 class="section-title mb-3">Pizza Delicious – End-to-End Pizza Ordering & Management System</h2>
+                    <p>Pizza Delicious ek complete, full-stack web application hai jo customers ko behtareen online pizza ordering experience aur admins ko powerful management tools provide karti hai. Is project mein maine End-to-End Development par focus kiya hai—front-end ki khoobsurti se lekar back-end ki complex logic tak. Ye application mobile, tablet, aur desktop har screen size par perfectly functional hai
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Key Modules & Features:</h3>
+                    <br>
+                    <h5>1. Customer Front-End (Ordering Experience)</h5>
+                    <ul>
+                        <li>Dynamic Landing Page: <br>         Ek modern, dark-themed hero section jo user ko interactive buttons ('Order Now', 'View Menu') ke sath engage karta hai</li><br>
+                        <li>Streamlined Cart & Checkout: <br>   'Add to Cart' page jahan user quantity select karta hai, dynamic pricing calculate hoti hai, aur address/phone details ke sath order place karta hai.</li><br>
+                        <li>Order Tracking (Dynamic): <br>    User apne order ka real-time status dekh sakta hai (Placed ➔ Processing ➔ Ready) ek dynamic aur animated progress bar ke zariye.</li><br>
+
+                    </ul>
+                    <h5>2. Admin Panel (Management & Analytics)</h5>
+                    <ul>
+                        <li>Comprehensive Dashboard: <br>   Admins ke liye ek central hub jo key metrics ko visual cards mein display karta hai: Total Users, Total Products, Total Orders, aur Pending Orders</li><br>
+                        <li>Data Visualization (Chart.js): <br> Sales aur operations ka quick overview dene ke liye advanced charts use kiye gaye hain:</li>
+                        <ul>
+                            <li>
+                                Orders per Product: Ek Bar Chart jo dikhata hai ke kaunsa pizza (e.g., Tikka Pizza) sab se zyada sale ho raha hai.
+                            </li>
+                            <li>Orders Status: Ek Pie/Doughnut Chart jo Pending, Approved, aur Declined orders ka distribution dikhata hai.</li>
+
+                        </ul><br>
+                        <li>Robust Management Modules: <br> Dedicated sections hain jahan Admins products, orders, users, messages, aur side menu navigation (e.g., Manage Users, Employees, Retail Shops, Vendors, Plans, Equipments) ko manage kar sakte hain</li><br>
+
+                    </ul>
+                    <br>
+                    <h3>🛠 Tech Stack Used:</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> 
+                            <br>HTML5, CSS3, Bootstrap (Grid & Layouts), JavaScript (jQuery), Chart.js for data visualization.</li><br>
+                            <li><strong>Backend:</strong><br>
+                            ASP.NET Core MVC (C#).</li><br>
+                        <li><strong>Database:</strong><br>
+                            SQL Server (Entity Framework Core).</li><br>
+                            <li><strong>Session Management:</strong><br>
+                                 Secure multi-user authentication system (Customers, Admins) using ASP.NET Sessions.</li><br>
+                    </ul>
+
+
+                    <h3>💡 Problem Solved:</h3>
+                    <p>
+Is application ka maqsad manual ordering system ko khatam karke pizza shops ko automated aur data-driven management system dena hai, jahan dynamic tracking se customers ka trust barhta hai aur charts se admins ko behtar decisions lene mein madad milti hai.</p>
+                    <!-- <a href="assets/Grey Modern Professional CV Resume (1).pdf" download="Umar_Madni_CV" class="btn-rounded btn btn-outline-primary mt-4">Download CV</a> -->
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="index.html">Portfolio</a> Distribution <a
+                    href="index.html">Umar Anjum</a>
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+
+        <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+</body>
+</html>
